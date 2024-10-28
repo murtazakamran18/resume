@@ -1,0 +1,111 @@
+/* General styling for the thank-you page */
+.bbc {
+    font-family: Arial, sans-serif;
+    background-color: #695aa6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Centered container with animation */
+.thank-you-container {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Card styling for message display */
+.thank-you-card {
+    background-color: #ffffff;
+    color: #333;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%; /* Use percentage width for responsiveness */
+    text-align: center;
+}
+
+.thank-you-card h1 {
+    color: #695aa6;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.thank-you-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Button styling for the return link */
+.btn-home {
+    background-color: #695aa6;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-home:hover {
+    background-color: #5a499a;
+    transform: scale(1.05);
+}
+
+.btn-home:active {
+    background-color: #4e3f87;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .thank-you-card {
+        padding: 2rem; /* Reduce padding on smaller screens */
+    }
+
+    .thank-you-card h1 {
+        font-size: 1.75rem; /* Smaller font size on mobile */
+    }
+
+    .thank-you-card p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    .btn-home {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-card {
+        padding: 1.5rem; /* Further reduce padding on extra small screens */
+    }
+
+    .thank-you-card h1 {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+
+    .thank-you-card p {
+        font-size: 0.8rem; /* Further reduce paragraph text */
+    }
+
+    .btn-home {
+        padding: 8px 12px; /* Adjust button padding */
+        font-size: 0.85rem; /* Further adjust button font size */
+    }
+}
